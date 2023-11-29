@@ -68,3 +68,32 @@ nav ul li button {
     justify-content: end;
     align-items: center;
 }
+
+.icon {
+    display: none;
+}
+
+
+@media (max-width:1024px){
+    .option{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+ 
+@media (max-width:500px){
+    .left-nav{
+        width: 20%;
+    }
+    .right-nav{
+        width:70%;
+    }
+}
