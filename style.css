@@ -9,8 +9,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+button{
+    transition: 0.3s;
+    border: none;
+}
 button:hover{
     cursor: pointer;
+    opacity: 0.9;
 }
 
 
@@ -21,25 +26,25 @@ nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    padding:0.5rem 0;
+    padding: 1rem 0;
 }
 
 nav ul{
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav ul li{
     list-style: none;
-    padding: 1rem;
-    
 }
 
 nav ul li a{
     text-decoration: none;
-    padding: 0.65rem 1rem;
     border-radius: 5rem;
     color: white;
     transition: 0.3s;
+    padding: 0.5rem 1rem;
 }
 
 nav ul li a:hover {
@@ -51,7 +56,7 @@ nav ul li a:hover {
     width: 40%;
 }
 
-.right-nav div button {
+nav ul li button {
     padding: 10px 0.75rem ;
     border-radius: 5rem;
     font-weight: bold;
