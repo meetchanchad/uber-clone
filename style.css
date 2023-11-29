@@ -9,6 +9,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+
+/* Navigation Bar Section */
 nav{
     background-color: black;
     color: white;
@@ -16,7 +22,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding:0.5rem 0;
-    
 }
 
 nav ul{
@@ -41,6 +46,11 @@ nav ul li a:hover {
     background-color: #333333;
 }
 
+.left-nav,
+.right-nav{
+    width: 40%;
+}
+
 .right-nav div button {
     padding: 10px 0.75rem ;
     border-radius: 5rem;
@@ -48,10 +58,8 @@ nav ul li a:hover {
     
 }
 
-
 .right-nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
-
