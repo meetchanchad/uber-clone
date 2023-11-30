@@ -18,6 +18,31 @@ button:hover{
     opacity: 0.9;
 }
 
+.black-btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.black-btn:hover{
+    opacity: 0.8;
+}
+
+.white-btn{
+    padding: 1rem 2rem;
+    background-color: #E2E2E2;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: 0.3s;
+}
+.white-btn:hover{
+    background-color: #d4d4d4;
+}
+
 
 /* Navigation Bar Section */
 nav{
@@ -89,15 +114,67 @@ nav ul li button {
     background-size: cover;
     height: 40rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .main-img-contant{
-
-    background-color: #333333;
-    width: 80vh;
+    width: 80rem;
     height: 100%;
+}
 
+.img-form{
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+    height: 32rem;
+    width: 36rem;
+    background-color: #fff;
+}
+
+.form-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid #808080;
+}
+
+.form-top div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.form-top i{
+    font-size: larger;
+}
+
+.form-bottom {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-bottom input {
+    height: 3rem;
+    width: 90%;
+    margin: 0.3rem 0;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+}
+
+.form-bottom h1{
+    font-size: 3.5rem;
+}
+
+.req-btn{
+    margin-right: 1rem;
 }
 
 @media (max-width:1024px){
