@@ -73,6 +73,32 @@ nav ul li button {
     display: none;
 }
 
+.uber{
+    cursor:default;
+}
+
+.uber:hover{
+    background-color: #000;
+}
+
+
+
+/* Main Img Section */
+.main-img{
+    background: url('./assets/main-bg-img.jpeg');
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+
+}
+
+.main-img-contant{
+
+    background-color: #333333;
+    width: 80vh;
+    height: 100%;
+
+}
 
 @media (max-width:1024px){
     .option{
