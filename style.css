@@ -185,6 +185,25 @@ nav ul li button {
     display: flex;
 }
 
+
+.mobile-image{
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.mobile-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
 @media (max-width:1024px){
     .option{
         display: none;
@@ -196,6 +215,11 @@ nav ul li button {
 
     .main-img-contant{
         background-color: red;
+        
+    }
+
+    .main-img{
+        height: 30rem;
     }
 
     .img-form{
@@ -212,8 +236,14 @@ nav ul li button {
     .form-top div{
         padding: 0 1rem;
     }
+
+    .mobile-image{
+        display: block;
+    }
     
 }
+
+
 
 @media (max-width: 768px){
     .form-btn{
@@ -232,12 +262,13 @@ nav ul li button {
 
     }
 
+    .main-img{
+        height: 35rem;
+    }
+
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    
-}   
  
 @media (max-width:500px){
     .left-nav{
@@ -245,5 +276,18 @@ nav ul li button {
     }
     .right-nav{
         width:70%;
+    }
+
+    .main-img{
+        height: 35rem;
+    }
+}
+
+ 
+@media (max-width: 356px){
+
+
+    .main-img{
+        height: 38rem;
     }
 }
