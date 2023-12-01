@@ -148,12 +148,16 @@ nav ul li button {
     gap: 1rem;
 }
 
+.form-top div span{
+    font-size: 14px;
+}
+
 .form-top i{
     font-size: larger;
 }
 
 .form-bottom {
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -170,11 +174,15 @@ nav ul li button {
 }
 
 .form-bottom h1{
-    font-size: 3.5rem;
+    font-size: 52px;
 }
 
 .req-btn{
     margin-right: 1rem;
+}
+
+.form-btn{
+    display: flex;
 }
 
 @media (max-width:1024px){
@@ -186,11 +194,50 @@ nav ul li button {
         display: block;
     }
 
+    .main-img-contant{
+        background-color: red;
+    }
+
+    .img-form{
+        height: 100%;
+        width: 100%;
+        position: static;
+    }
+
+    .form-top{
+        justify-content: start;
+        
+    }
+
+    .form-top div{
+        padding: 0 1rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .form-btn{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .form-btn  button{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .form-bottom h1{
+        font-size: 36px;
+
+    }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     
-}
+}   
  
 @media (max-width:500px){
     .left-nav{
