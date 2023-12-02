@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-button{
+button {
     transition: 0.3s;
     border: none;
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     opacity: 0.9;
 }
 
-.black-btn{
+.black-btn {
     padding: 1rem 2rem;
     font-size: 1rem;
     background-color: black;
@@ -27,11 +28,12 @@ button:hover{
     transition: 0.3s;
 
 }
-.black-btn:hover{
+
+.black-btn:hover {
     opacity: 0.8;
 }
 
-.white-btn{
+.white-btn {
     padding: 1rem 2rem;
     background-color: #E2E2E2;
     color: #000;
@@ -39,32 +41,33 @@ button:hover{
     border-radius: 10px;
     transform: 0.3s;
 }
-.white-btn:hover{
+
+.white-btn:hover {
     background-color: #d4d4d4;
 }
 
 
 /* Navigation Bar Section */
-nav{
+nav {
     background-color: black;
     color: white;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     border-radius: 5rem;
     color: white;
@@ -77,15 +80,15 @@ nav ul li a:hover {
 }
 
 .left-nav,
-.right-nav{
+.right-nav {
     width: 40%;
 }
 
 nav ul li button {
-    padding: 10px 0.75rem ;
+    padding: 10px 0.75rem;
     border-radius: 5rem;
     font-weight: bold;
-    
+
 }
 
 .right-nav {
@@ -98,33 +101,32 @@ nav ul li button {
     display: none;
 }
 
-.uber{
-    cursor:default;
+.uber {
+    cursor: default;
 }
 
-.uber:hover{
+.uber:hover {
     background-color: #000;
 }
 
 
 
 /* Main Img Section */
-.main-img{
+.main-img {
     background: url('./assets/main-bg-img.jpeg');
     background-size: cover;
     height: 40rem;
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
-.main-img-contant{
+.main-img-contant {
     width: 80rem;
     height: 100%;
 }
 
-.img-form{
+.img-form {
     position: relative;
     top: 4rem;
     left: 4rem;
@@ -133,7 +135,7 @@ nav ul li button {
     background-color: #fff;
 }
 
-.form-top{
+.form-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -141,18 +143,18 @@ nav ul li button {
     border-bottom: 1px solid #808080;
 }
 
-.form-top div{
+.form-top div {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
 }
 
-.form-top div span{
+.form-top div span {
     font-size: 14px;
 }
 
-.form-top i{
+.form-top i {
     font-size: larger;
 }
 
@@ -173,20 +175,27 @@ nav ul li button {
     background-color: #f6f6f6;
 }
 
-.form-bottom h1{
+.form-bottom h1 {
     font-size: 52px;
 }
 
-.req-btn{
+.req-btn {
     margin-right: 1rem;
 }
 
-.form-btn{
+.form-btn {
     display: flex;
 }
 
+.business-img {
+    background-image: url('./assets/pexels-pixabay-258117.jpg');
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+}
 
-.mobile-image{
+
+.mobile-image {
     width: 100%;
     height: 30%;
     overflow: hidden;
@@ -204,90 +213,90 @@ nav ul li button {
 }
 
 
-@media (max-width:1024px){
-    .option{
+@media (max-width:1024px) {
+    .option {
         display: none;
     }
 
-    .icon{
+    .icon {
         display: block;
     }
 
-    .main-img-contant{
+    .main-img-contant {
         background-color: red;
-        
+
     }
 
-    .main-img{
+    .main-img {
         height: 30rem;
     }
 
-    .img-form{
+    .img-form {
         height: 100%;
         width: 100%;
         position: static;
     }
 
-    .form-top{
+    .form-top {
         justify-content: start;
-        
+
     }
 
-    .form-top div{
+    .form-top div {
         padding: 0 1rem;
     }
 
-    .mobile-image{
+    .mobile-image {
         display: block;
     }
-    
+
 }
 
 
 
-@media (max-width: 768px){
-    .form-btn{
+@media (max-width: 768px) {
+    .form-btn {
         flex-direction: column;
         width: 100%;
 
     }
 
-    .form-btn  button{
+    .form-btn button {
         width: 100%;
         margin: 1rem 0;
     }
-    
-    .form-bottom h1{
+
+    .form-bottom h1 {
         font-size: 36px;
 
     }
 
-    .main-img{
+    .main-img {
         height: 35rem;
     }
 
 
 }
 
- 
-@media (max-width:500px){
-    .left-nav{
+
+@media (max-width:500px) {
+    .left-nav {
         width: 20%;
     }
-    .right-nav{
-        width:70%;
+
+    .right-nav {
+        width: 70%;
     }
 
-    .main-img{
+    .main-img {
         height: 35rem;
     }
 }
 
- 
-@media (max-width: 356px){
 
+@media (max-width: 356px) {
 
-    .main-img{
+    .main-img {
         height: 38rem;
     }
 }
