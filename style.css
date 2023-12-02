@@ -188,7 +188,7 @@ nav ul li button {
 }
 
 .business-img {
-    background-image: url('./assets/pexels-pixabay-258117.jpg');
+    background-image: url('./assets/HP-U4B-NYC-bkg.jpeg');
     height: 300px;
     width: 100%;
     background-size: cover;
@@ -198,7 +198,7 @@ nav ul li button {
 .mobile-image {
     width: 100%;
     height: 30%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,8 +208,27 @@ nav ul li button {
 .mobile-image img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 
+}
+
+.bns-img-over{
+    /* position: relative; */
+    height: 172px;
+    width: 80%;
+    margin: 0 100px;
+    padding: 64px;
+}
+
+.bns-content h1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.bns-content p{
+    padding-bottom: 2rem;
 }
 
 
