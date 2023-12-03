@@ -187,17 +187,10 @@ nav ul li button {
     display: flex;
 }
 
-.business-img {
-    background-image: url('./assets/HP-U4B-NYC-bkg.jpeg');
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-}
 
 
 .mobile-image {
     width: 100%;
-    height: 30%;
     /* overflow: hidden; */
     display: flex;
     justify-content: center;
@@ -212,25 +205,46 @@ nav ul li button {
 
 }
 
-.bns-img-over{
-    /* position: relative; */
-    height: 172px;
-    width: 80%;
-    margin: 0 100px;
-    padding: 64px;
+
+.business-img {
+    background-image: url('./assets/HP-U4B-NYC-bkg.jpeg');
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bns-content h1{
-    width: 80%;
+
+.bns-content{
+    padding: 0.5rem 0;
+    width: 95%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    /* justify-content: center; */
+    gap: 1.5rem;
+
+    /* width right left kem lage  */
+
 }
 
-.bns-content p{
-    padding-bottom: 2rem;
+
+
+.bns-content h1{
+    font-size: 32px;
 }
 
+
+@media (min-width:1024px) {
+    .bns-content{
+        width: 70%;
+    }
+
+    .bns-content h1{
+    font-size: 36px;
+    }
+}
 
 @media (max-width:1024px) {
     .option {
@@ -268,6 +282,7 @@ nav ul li button {
     .mobile-image {
         display: block;
     }
+    
 
 }
 
@@ -310,6 +325,10 @@ nav ul li button {
     .main-img {
         height: 35rem;
     }
+
+    .bns-content h1{
+        font-size: 28px;
+    }
 }
 
 
@@ -317,5 +336,9 @@ nav ul li button {
 
     .main-img {
         height: 38rem;
+    }
+
+    .bns-content h1{
+        font-size: 28px;
     }
 }
