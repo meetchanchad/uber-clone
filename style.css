@@ -236,6 +236,46 @@ nav ul li button {
 }
 
 
+/* Container */
+
+.safety{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.safety-heading h1{
+    text-align: start;
+}
+
+.safety-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.safety-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.safety-heading{
+    width: 100%;
+}
+
+.safety-left{
+    width: 50rem;
+}
+
+.safety-right{
+    width: 50rem;
+}
+
 @media (min-width:1024px) {
     .bns-content{
         width: 70%;
