@@ -52,9 +52,20 @@ nav {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    /* gap: 10rem; */
 }
 
 nav ul {
@@ -79,10 +90,10 @@ nav ul li a:hover {
     background-color: #333333;
 }
 
-.left-nav,
+/* .left-nav,
 .right-nav {
     width: 40%;
-}
+} */
 
 nav ul li button {
     padding: 10px 0.75rem;
@@ -123,13 +134,14 @@ nav ul li button {
 
 .main-img-contant {
     width: 80rem;
+    max-width: 1100px;
     height: 100%;
 }
 
 .img-form {
     position: relative;
     top: 4rem;
-    left: 4rem;
+    /* left: 4rem; */
     height: 32rem;
     width: 36rem;
     background-color: #fff;
@@ -220,13 +232,11 @@ nav ul li button {
 .bns-content{
     padding: 0.5rem 0;
     width: 95%;
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     gap: 1.5rem;
-
-    /* width right left kem lage  */
-
 }
 
 
@@ -293,6 +303,271 @@ nav ul li button {
     margin-right: 1rem;
 }
 
+/* changes  */
+
+.safety-link{
+    position: relative;
+}
+
+.safety-link::after{
+    content:'';
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    left: 0; 
+    bottom: -1px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.safety-link:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+
+
+/* about */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.a-container{
+    width: 80%;
+    max-width: 1100px;
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.a-card{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    gap: 2rem;
+}
+
+.a-card a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-info img{
+    width: 24px;
+}
+
+.card-info h1{
+    font-size: 18px;
+    color: #000;
+}
+
+.card-info p{
+    color: #333333;
+}
+
+/* ride  */
+
+
+.ride{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.r-container{
+    width: 80%;
+    max-width: 1100px;
+}
+
+.r-container h1{
+    font-size: 36px;
+}
+
+.card-con{
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 36px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* width: 558px; */
+}
+
+.card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .card .fa-solid{
+    text-align: end;
+} */
+
+.card img{
+    width: 150px;
+}
+
+.card h2{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card i{
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.card:hover i{
+    transform: translateX(10px);
+}
+
+/* .r-info{
+    width: 20rem;
+} */
+
+
+/* App  */
+
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    background-color: #f6f6f6;
+}
+
+.app-container{
+    width: 80%;
+    max-width: 1100px;
+    padding: 64px;
+}
+
+.app-card-con{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 36px;
+    margin-top: 50px;
+}
+
+.app-card{
+    background-color: #fff;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-card:hover i{
+    transform: translateX(10px);
+}
+
+.app-card i{
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.app-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-img-1, .app-img-2{
+    width: 150px;
+}
+
+.app-img-2{
+    display: none;
+}
+
+.app-info h2{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* sign up  */
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-container{
+    width: 80%;
+    max-width: 1100px;
+    padding: 60px;
+
+}
+
+.sign-card-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 36px;
+    
+}
+
+.sign-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.sign-card:hover i{
+    transform: translateX(10px);
+}
+.sign-card:hover{
+    opacity: 0.7;
+}
+
+.sign-card h1{
+    font-size: 36px;
+}
+
+.sign-card i{
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
 @media (min-width:1024px) {
     .bns-content{
         width: 70%;
@@ -339,6 +614,61 @@ nav ul li button {
     .mobile-image {
         display: block;
     }
+
+    .a-container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: start; */
+        align-items: start;
+        padding: 2rem;
+    }
+    
+    .card-con{
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    .card img{
+        width: 84px;
+    }
+
+    .app{
+        background-color: #fff;
+    }
+
+    .app-container{
+        padding: 32px;
+    }
+
+    .app-card{
+        border: 0.5px solid #e0e0e0;
+        padding: 12px;
+    }
+
+    .app-card-con{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-card img{
+        width: 84px;
+    }
+    
+    .app-info h2{
+        font-size: 20px;
+    }
+
+    .app-info p{
+        display: none;
+    }
+
+    .app-img-2{
+        display: block;
+    }
+
+    .app-img-1{
+        display: none;
+    }
+
     
 
 }
@@ -368,6 +698,29 @@ nav ul li button {
 
     .safety-cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card i{
+        font-size: 1rem;
+    }
+    .app-card i{
+        font-size: 1rem;
+    }
+
+    .sign-card-con{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);        
+    }
+    
+    .sign-card h1{
+        font-size: 28px;
+    }
+    .sign-card i{
+        font-size: 1.5rem;
+    }
+
+    .sign-card{
+        padding-bottom: 24px;
     }
 
 }
