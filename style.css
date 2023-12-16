@@ -563,6 +563,143 @@ nav ul li button {
 }
 
 
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+}
+
+.f-container{
+    width: 80%;
+    max-width: 1100px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.f-container h1,.f-container p{
+    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.f-container p{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: fit-content;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.f-container p:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 39.5px ;
+}
+
+.f-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 36px;
+}
+
+.con-col{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.con-col h2{
+    font-size: 18px;
+}
+
+.con-col ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.con-col ul li:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.f-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+    /* gap: 40px; */
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+
+} 
+
+.social-2{
+    display: flex;
+    /* gap: 40px; */
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+/* .social-icon div{
+    padding: 1rem;
+} */
+.social div a,
+.social-2 div a
+{
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.social div a:hover,
+.social-2 div a:hover
+{
+    background-color: #333333;
+}
+
+.f-app{
+    display: flex;
+    gap: 4px;
+}
+
+.copy-right{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #afafaf;
+}
+
+.c-links a{
+    text-decoration: none;
+    color: #afafaf;
+    margin-right: 20px;
+}
+
+.c-links a:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
 
 
 
@@ -669,6 +806,29 @@ nav ul li button {
         display: none;
     }
 
+    .f-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .f-icon{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: start;
+        gap: 36px;
+        flex-direction: column;
+    }
+
+    .copy-right{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        /* justify-content: space-between; */
+        align-items: start;
+
+    }
+
+    
     
 
 }
@@ -723,6 +883,11 @@ nav ul li button {
         padding-bottom: 24px;
     }
 
+    .f-container{
+        padding: 32px;
+    }
+
+
 }
 
 
@@ -747,6 +912,20 @@ nav ul li button {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .f-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .social{
+        display: flex;
+        gap: 10px;
+    } 
+
+    .f-app img{
+        width: 100px;
+    }
+
 }
 
 
@@ -762,4 +941,9 @@ nav ul li button {
     .safety-cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .social{
+        display: flex;
+        gap: 5px;
+    } 
 }
